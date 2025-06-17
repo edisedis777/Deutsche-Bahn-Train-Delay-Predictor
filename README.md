@@ -6,7 +6,8 @@ A machine learning pipeline to predict train delays in Germany using the Deutsch
 ```markdown
 # 🚆 Deutsche Bahn Train Delay Predictor
 
-This project uses historical Deutsche Bahn (DB) train data to build a machine learning model that predicts train delays in Germany.
+This project uses historical Deutsche Bahn (DB) train data to build a machine learning model
+that predicts train delays in Germany.
 The final solution includes a full pipeline:
 
 - ✅ Data Preprocessing
@@ -26,13 +27,15 @@ which contains raw arrival and departure times for DB trains across Germany.
 
 We use these records to calculate and predict **train delay in minutes**.
 
-**Credit:** All data used in this project belongs to and is made publicly available by [piebro](https://github.com/piebro).
+**Credit:** All data used in this project belongs to and is made publicly available 
+by [piebro](https://github.com/piebro).
 
 ---
 
 ## 🧠 Project Goal
 
-Predict whether a train will be delayed (and by how many minutes) based on features such as:
+Predict whether a train will be delayed (and by how many minutes) based on features 
+such as:
 
 - Train type
 - Station
@@ -67,7 +70,9 @@ Predict whether a train will be delayed (and by how many minutes) based on featu
 
 ### 1. 🧹 Data Preprocessing
 
-We cleaned and joined CSV files from piebro’s repo, parsed planned vs actual times, and computed delay in minutes. 
+We cleaned and joined CSV files from piebro’s repo, 
+parsed planned vs actual times, 
+and computed delay in minutes. 
 
 Then we extracted:
 - Hour and day of the week
@@ -99,7 +104,8 @@ This creates `model.pth`.
 
 ### 3. 🌐 API with Flask
 
-We expose a `/predict` endpoint that accepts JSON input and returns the predicted delay in minutes.
+We expose a `/predict` endpoint that accepts JSON input 
+and returns the predicted delay in minutes.
 
 ```bash
 cd app
@@ -121,7 +127,8 @@ Example request:
 
 ### 4. 🖥️ Web App
 
-A simple form interface is served via Flask using HTML/CSS. Users input details like station, time, and train type. 
+A simple form interface is served via Flask using HTML/CSS. 
+Users input details like station, time, and train type. 
 Output is shown directly on the page.
 
 Visit: `http://localhost:5000/`
@@ -156,7 +163,8 @@ Deployment script is provided (`deploy.sh`) to run:
 
 ### 7. 📄 Documentation (PDF)
 
-All project components, architecture diagrams, usage instructions, and results are summarized in `DB_Delay_Predictor.pdf`.
+All project components, architecture diagrams, usage instructions, 
+and results are summarized in `DB_Delay_Predictor.pdf`.
 
 ---
 
