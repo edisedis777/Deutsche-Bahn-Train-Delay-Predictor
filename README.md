@@ -25,7 +25,7 @@ The final solution includes a full pipeline:
 The dataset is from [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data), 
 which contains raw arrival and departure times for DB trains across Germany. 
 
-We use these records to calculate and predict **train delay in minutes**.
+I used these records to calculate and predict **train delay in minutes**.
 
 **Credit:** All data used in this project belongs to and is made publicly available 
 by [piebro](https://github.com/piebro).
@@ -71,11 +71,11 @@ such as:
 
 ### 1. 🧹 Data Preprocessing
 
-We cleaned and joined CSV files from piebro’s repo, 
+I cleaned the files from piebro’s repo, 
 parsed planned vs actual times, 
 and computed delay in minutes. 
 
-Then we extracted:
+Then I extracted:
 - Hour and day of the week
 - One-hot encoded train type and station ID
 
@@ -89,7 +89,7 @@ This generates a cleaned dataset in `./processed_data/`.
 
 ### 2. 🧪 Model Training (PyTorch)
 
-We trained a **Multilayer Perceptron (MLP)** regression model on tabular features using PyTorch.
+I trained a **Multilayer Perceptron (MLP)** regression model on tabular features using PyTorch.
 
 * Loss: MSE (Mean Squared Error)
 * Optimizer: Adam
@@ -105,7 +105,7 @@ This creates `model.pth`.
 
 ### 3. 🌐 API with Flask
 
-We expose a `/predict` endpoint that accepts JSON input 
+I exposed a `/predict` endpoint that accepts JSON input 
 and returns the predicted delay in minutes.
 
 ```bash
