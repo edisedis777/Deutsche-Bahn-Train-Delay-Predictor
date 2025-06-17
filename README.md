@@ -6,7 +6,8 @@ A machine learning pipeline to predict train delays in Germany using the Deutsch
 ```markdown
 # 🚆 Deutsche Bahn Train Delay Predictor
 
-This project uses historical Deutsche Bahn (DB) train data to build a machine learning model that predicts train delays in Germany. The final solution includes a full pipeline:
+This project uses historical Deutsche Bahn (DB) train data to build a machine learning model that predicts train delays in Germany.
+The final solution includes a full pipeline:
 
 - ✅ Data Preprocessing
 - ✅ PyTorch Model Training
@@ -20,7 +21,10 @@ This project uses historical Deutsche Bahn (DB) train data to build a machine le
 
 ## 📁 Dataset
 
-The dataset is from [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data), which contains raw arrival and departure times for DB trains across Germany. We use these records to calculate and predict **train delay in minutes**.
+The dataset is from [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data), 
+which contains raw arrival and departure times for DB trains across Germany. 
+
+We use these records to calculate and predict **train delay in minutes**.
 
 **Credit:** All data used in this project belongs to and is made publicly available by [piebro](https://github.com/piebro).
 
@@ -63,8 +67,9 @@ Predict whether a train will be delayed (and by how many minutes) based on featu
 
 ### 1. 🧹 Data Preprocessing
 
-We cleaned and joined CSV files from piebro’s repo, parsed planned vs actual times, and computed delay in minutes. Then we extracted:
+We cleaned and joined CSV files from piebro’s repo, parsed planned vs actual times, and computed delay in minutes. 
 
+Then we extracted:
 - Hour and day of the week
 - One-hot encoded train type and station ID
 
@@ -116,7 +121,8 @@ Example request:
 
 ### 4. 🖥️ Web App
 
-A simple form interface is served via Flask using HTML/CSS. Users input details like station, time, and train type. Output is shown directly on the page.
+A simple form interface is served via Flask using HTML/CSS. Users input details like station, time, and train type. 
+Output is shown directly on the page.
 
 Visit: `http://localhost:5000/`
 
@@ -207,10 +213,5 @@ python app.py
 
 ---
 
-## 📬 Contact
-
-Have questions or feedback? Reach out or open an issue.
-
----
 
 
