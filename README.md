@@ -1,7 +1,6 @@
 # 🚆 Deutsche Bahn Train Delay Predictor
 
-This project uses historical Deutsche Bahn (DB) train data to build a machine learning model  
-that predicts train delays in Germany.  
+## This project uses historical Deutsche Bahn (DB) train data to build a machine learning model that predicts train delays in Germany.  
 The final solution includes a full pipeline:
 ```markdown
 - ✅ Data Preprocessing  
@@ -15,7 +14,6 @@ The final solution includes a full pipeline:
 ---
 
 ## 📁 Dataset
-
 The dataset is from [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data),  
 which contains raw arrival and departure times for DB trains across Germany.  
 
@@ -27,7 +25,6 @@ by [piebro](https://github.com/piebro).
 ---
 
 ## 🧠 Project Goal
-
 Predict whether a train will be delayed (and by how many minutes) based on features such as:
 
 - Train type  
@@ -62,7 +59,6 @@ Predict whether a train will be delayed (and by how many minutes) based on featu
 ## 🏗️ Step-by-Step Overview
 
 ### 1. 🧹 Data Preprocessing
-
 * Clean raw DB train data from piebro’s repo
 * Parse planned vs actual arrival times and compute delay in minutes
 * Extract and one-hot encode features: train type, station, hour, weekday
@@ -76,7 +72,6 @@ This generates cleaned and processed data files (CSV/Parquet) used for training.
 ---
 
 ### 2. 🧪 Model Training (PyTorch)
-
 Train a **Multilayer Perceptron (MLP)** regression model on the processed tabular features.
 
 * Loss: MSE (Mean Squared Error)
@@ -92,7 +87,6 @@ This creates the trained model file `model.pth`.
 ---
 
 ### 3. 🌐 API with Flask
-
 Start the Flask API serving a `/predict` endpoint that accepts JSON input and returns predicted delay in minutes.
 
 ```bash
@@ -114,7 +108,6 @@ Example request JSON:
 ---
 
 ### 4. 🖥️ Web App
-
 A simple form interface served via Flask lets users enter details (station, time, train type) and shows prediction results directly on the page.
 
 Access at: `http://localhost:5000/`
@@ -122,7 +115,6 @@ Access at: `http://localhost:5000/`
 ---
 
 ### 5. 📊 Monitoring Pipeline
-
 The monitoring script logs:
 
 * Timestamp of prediction
@@ -139,7 +131,6 @@ python monitor.py
 ---
 
 ### 6. ☁️ Cloud Hosting
-
 Deployment script (`deploy.sh`) automates:
 
 * Running Flask API with Gunicorn
@@ -148,7 +139,6 @@ Deployment script (`deploy.sh`) automates:
 ---
 
 ### 7. 📄 Documentation (PDF)
-
 Complete project documentation including architecture diagrams, usage, and results is available in `DB_Delay_Predictor.pdf`.
 
 ---
@@ -166,7 +156,6 @@ Complete project documentation including architecture diagrams, usage, and resul
 ---
 
 ## 🧠 Future Improvements
-
 * Add weather and holiday data features
 * Experiment with XGBoost or LightGBM models
 * Add interactive map visualizations of delay hotspots
@@ -175,14 +164,12 @@ Complete project documentation including architecture diagrams, usage, and resul
 ---
 
 ## 📜 License & Credits
-
 * Data source: [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data)
 * Code & project: © 2025 GNU AFFERO GENERAL PUBLIC LICENSE
 
 ---
 
 ## 🙌 Contributing
-
 Feel free to open issues or submit pull requests to improve the model, UI, or monitoring.
 
 ---
