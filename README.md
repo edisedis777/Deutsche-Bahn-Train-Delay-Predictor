@@ -49,7 +49,7 @@ such as:
 
 ```markdown
 
-├── data\_preprocessing.py       # Clean & transform data
+├── preprocessing.py       # Clean & transform data
 ├── train\_model.py              # PyTorch model training
 ├── model.pth                   # Saved trained model
 ├── app/
@@ -60,7 +60,7 @@ such as:
 ├── monitor.py                  # Request logging and drift detection
 ├── requirements.txt
 ├── deploy.sh                   # Cloud deployment script
-├── DB\_Delay\_Predictor.pdf      # 2-page project documentation
+├── DB_Delay_Predictor.pdf      # 2-page project documentation
 └── README.md                   # You're here
 ```
 
