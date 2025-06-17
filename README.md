@@ -15,7 +15,7 @@ This project uses historical Deutsche Bahn (DB) train data to build a machine le
 - ✅ Monitoring and Logging System
 - ✅ Cloud Deployment (e.g. Render, AWS EC2, Azure)
 - ✅ Two-Page PDF Project Report
-
+```
 ---
 
 ## 📁 Dataset
@@ -40,7 +40,7 @@ Predict whether a train will be delayed (and by how many minutes) based on featu
 
 ## ⚙️ Project Structure
 
-```
+```markdown
 
 ├── data\_preprocessing.py       # Clean & transform data
 ├── train\_model.py              # PyTorch model training
@@ -55,8 +55,7 @@ Predict whether a train will be delayed (and by how many minutes) based on featu
 ├── deploy.sh                   # Cloud deployment script
 ├── DB\_Delay\_Predictor.pdf      # 2-page project documentation
 └── README.md                   # You're here
-
-````
+```
 
 ---
 
