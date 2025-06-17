@@ -49,8 +49,8 @@ such as:
 
 ```markdown
 
-├── preprocessing.py       # Clean & transform data
-├── train\_model.py              # PyTorch model training
+├── data_processing.py       # Clean & transform data
+├── train_model.py              # PyTorch model training
 ├── model.pth                   # Saved trained model
 ├── app/
 │   ├── app.py                  # Flask API
@@ -59,6 +59,7 @@ such as:
 │   └── static/
 ├── monitor.py                  # Request logging and drift detection
 ├── requirements.txt
+├── save_feature_columns.py     #Run this after processing and before training, to store the one-hot feature names
 ├── deploy.sh                   # Cloud deployment script
 ├── DB_Delay_Predictor.pdf      # 2-page project documentation
 └── README.md                   # You're here
