@@ -177,7 +177,7 @@ Complete project documentation including architecture diagrams, usage, and resul
 ## 📜 License & Credits
 
 * Data source: [piebro/deutsche-bahn-data](https://github.com/piebro/deutsche-bahn-data)
-* Code & project: © 2025 
+* Code & project: © 2025 GNU AFFERO GENERAL PUBLIC LICENSE
 
 ---
 
