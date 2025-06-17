@@ -59,7 +59,7 @@ such as:
 │   └── static/
 ├── monitor.py                  # Request logging and drift detection
 ├── requirements.txt
-├── save_feature_columns.py     #Run this after processing and before training, to store the one-hot feature names
+├── save_feature_columns.py     # Run this after processing and before training, to store the one-hot feature names
 ├── deploy.sh                   # Cloud deployment script
 ├── DB_Delay_Predictor.pdf      # 2-page project documentation
 └── README.md                   # You're here
