@@ -1,7 +1,10 @@
 # 🚆 Deutsche Bahn Train Delay Predictor
 
 ## This project uses historical Deutsche Bahn (DB) train data to build a machine learning model that predicts train delays in Germany.  
-The final solution includes a full pipeline:
+
+![DB_Delay_Predictor_1](https://github.com/user-attachments/assets/ce675d5f-d642-4ae3-be1c-2120991374a5)
+
+### The final solution includes a full pipeline:
 ```markdown
 - ✅ Data Preprocessing  
 - ✅ PyTorch Model Training  
