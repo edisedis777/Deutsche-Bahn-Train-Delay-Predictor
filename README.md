@@ -12,7 +12,7 @@
 - ✅ Web App Interface for Users  
 - ✅ Monitoring and Logging System  
 - ✅ Cloud Deployment (e.g. Render, AWS EC2, Azure)  
-- ✅ Two-Page PDF Project Report  
+- ✅ 1-Page PDF Project Report  
 ```
 ---
 
